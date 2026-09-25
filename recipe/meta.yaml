@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/spt3g/spt3g-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/s/spt3g/spt3g-{{ version }}.tar.gz
   sha256: e4c16193fd2fb27238a3bf7cd895bb7abd36e159b4887fc6885a49766c712813
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
