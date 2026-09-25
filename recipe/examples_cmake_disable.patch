@@ -1,5 +1,3 @@
-diff --git a/examples/CMakeLists.txt b/examples/CMakeLists.txt
-index aa880ca..59d6153 100644
 --- a/examples/CMakeLists.txt
 +++ b/examples/CMakeLists.txt
 @@ -1,4 +1,4 @@
