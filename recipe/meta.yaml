@@ -13,6 +13,7 @@ build:
   skip: true  # [win]
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+    - CIBUILDWHEEL=1
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -31,7 +32,6 @@ requirements:
     - libgomp  # [linux]
   host:
     - python
-    - libpython
     - pip
     - pybind11
     - setuptools
